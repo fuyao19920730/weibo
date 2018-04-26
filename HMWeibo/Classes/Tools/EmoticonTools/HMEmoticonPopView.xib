@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HMEmoticonPopView" customModule="HMWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoticon_keyboard_magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="JsD-6r-pHz">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+                </imageView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcy-8b-Iks" customClass="HMEmoticonButtton" customModule="HMWeibo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="LjM-Pu-dWN"/>
+                        <constraint firstAttribute="width" constant="64" id="wyM-o6-YfL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zcy-8b-Iks" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ifb-dd-ALx"/>
+                <constraint firstAttribute="trailing" secondItem="JsD-6r-pHz" secondAttribute="trailing" id="Whc-Ev-3tT"/>
+                <constraint firstAttribute="bottom" secondItem="JsD-6r-pHz" secondAttribute="bottom" id="byo-V8-Zal"/>
+                <constraint firstItem="zcy-8b-Iks" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o0K-Cb-FqQ"/>
+                <constraint firstItem="JsD-6r-pHz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v7u-Dc-fwH"/>
+                <constraint firstItem="JsD-6r-pHz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yRD-3k-J4k"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emoticonButton" destination="zcy-8b-Iks" id="3Kn-ho-L0m"/>
+            </connections>
+            <point key="canvasLocation" x="384" y="-30.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emoticon_keyboard_magnifier" width="64" height="91"/>
+    </resources>
+</document>

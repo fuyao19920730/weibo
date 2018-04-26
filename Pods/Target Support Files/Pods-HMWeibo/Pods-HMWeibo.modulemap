@@ -1,0 +1,6 @@
+framework module Pods_HMWeibo {
+  umbrella header "Pods-HMWeibo-umbrella.h"
+
+  export *
+  module * { export * }
+}
